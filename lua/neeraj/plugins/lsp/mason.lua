@@ -4,11 +4,11 @@ return {
   --   "williamboman/mason-lspconfig.nvim",
   --   "jayp0521/mason-null-ls.nvim",
   -- },
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   version = "^1.8.0", -- or latest
   dependencies = {
     {
-      "williamboman/mason-lspconfig.nvim",
+      "mason-org/mason-lspconfig.nvim",
       version = "^1.29.0", -- this version avoids the `.enable()` call
     },
     {
