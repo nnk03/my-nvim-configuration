@@ -14,6 +14,4 @@ require("neeraj.lazy")
 -- local plugins = {}
 -- local opts = {}
 
-
-
-
+require("neeraj.autocmd")
