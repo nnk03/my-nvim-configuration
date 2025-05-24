@@ -28,18 +28,18 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }
 -- Add semicolon at the end
 -- keymap.set("n", "<leader>;", "<Esc>A;<Esc>", { desc = "Add semicolon at the end of the current line" })
 vim.keymap.set("n", "<leader>;", function()
-  local line = vim.api.nvim_get_current_line()
-  if not line:match(";%s*$") then
-    vim.api.nvim_set_current_line(line .. ";")
-  end
+	local line = vim.api.nvim_get_current_line()
+	if not line:match(";%s*$") then
+		vim.api.nvim_set_current_line(line .. ";")
+	end
 end, { desc = "Add semicolon at end of line (if not present)" })
 
 -- Add comma at the end
 vim.keymap.set("n", "<leader>,", function()
-  local line = vim.api.nvim_get_current_line()
-  if not line:match(",%s*$") then
-    vim.api.nvim_set_current_line(line .. ",")
-  end
+	local line = vim.api.nvim_get_current_line()
+	if not line:match(",%s*$") then
+		vim.api.nvim_set_current_line(line .. ",")
+	end
 end, { desc = "Add comma at end of line (if not present)" })
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
@@ -70,10 +70,10 @@ vim.keymap.set("n", "<leader>bfp", "<Esc>:! black % <CR>")
 -- compiling
 -- make it specific for C++
 vim.keymap.set(
-  "n",
-  "<leader>bcp",
-  "<Esc>:! g++ %; ./a.out <CR>",
-  { desc = "compile the current file (c++) and execute " }
+	"n",
+	"<leader>bcp",
+	"<Esc>:! g++ %; ./a.out <CR>",
+	{ desc = "compile the current file (c++) and execute " }
 )
 -- vim.keymap.set(
 --   "n",
@@ -82,10 +82,10 @@ vim.keymap.set(
 --   { desc = "Interpret current sml code and write it to output.txt" }
 -- )
 vim.keymap.set(
-  "n",
-  "<leader>bml",
-  "<Esc>:! ocamlc %; ./a.out > output.txt<CR>",
-  { desc = "compile and execute current ocaml code and write it to output.txt" }
+	"n",
+	"<leader>bml",
+	"<Esc>:! ocamlc %; ./a.out > output.txt<CR>",
+	{ desc = "compile and execute current ocaml code and write it to output.txt" }
 )
 
 -- for python code interpreting
@@ -97,10 +97,10 @@ vim.keymap.set("n", "<leader>bp", "<Esc>:! python3 %; <CR>", { desc = "Interpret
 
 -- set keymap to delete current file from buffer without closing windows
 vim.keymap.set(
-  "n",
-  "<leader>fd",
-  "<cmd>bp<bar>sp<bar>bn<bar>bd<CR>",
-  { desc = "Remove current file from buffer without closing window " }
+	"n",
+	"<leader>fd",
+	"<cmd>bp<bar>sp<bar>bn<bar>bd<CR>",
+	{ desc = "Remove current file from buffer without closing window " }
 )
 
 -- Oil.nvim

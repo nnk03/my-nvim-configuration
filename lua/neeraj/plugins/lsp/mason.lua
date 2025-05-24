@@ -1,10 +1,10 @@
 -- for the lsp server part
 return {
-    "mason-org/mason.nvim",
-    opts = {},
-   config = function()
-      require("mason").setup()
-   end
+	"mason-org/mason.nvim",
+	opts = {},
+	config = function()
+		require("mason").setup()
+	end,
 }
 
 -- return {

@@ -51,10 +51,17 @@ return {
 				require("ts_context_commentstring").setup({}),
 				vim.g.skip_ts_contex,
 				t_commentstring_module = true,
-
 				-- auto install above language parsers
 				auto_install = true,
 			})
+
+			-- print("FOLDING CONFIGURE")
+			-- configure folding
+			-- vim.opt.foldmethod = "expr"
+			-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+			-- vim.opt.foldenable = true
+			-- vim.opt.foldlevel = 99
+			-- vim.opt.foldlevelstart = 99
 		end,
 	},
 }

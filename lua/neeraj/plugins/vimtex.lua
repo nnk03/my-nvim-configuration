@@ -1,4 +1,4 @@
 return {
-  "lervag/vimtex",
-  init = function() end,
+	"lervag/vimtex",
+	init = function() end,
 }
