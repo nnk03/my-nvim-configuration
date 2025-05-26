@@ -15,3 +15,8 @@ require("neeraj.lazy")
 -- local opts = {}
 
 require("neeraj.autocmd")
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false -- Start with all folds open
+vim.opt.foldlevel = 99 -- Don't auto-close any folds
