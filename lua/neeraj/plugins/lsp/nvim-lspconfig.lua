@@ -96,7 +96,10 @@ return {
 		-- enable clangd for c++
 		lspconfig.clangd.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
+			on_attach = function(client, bufnr)
+				on_attach(client, bufnr)
+				client.server_capabilities.semanticTokensProvider = nil
+			end,
 		})
 
 		-- enable matlab

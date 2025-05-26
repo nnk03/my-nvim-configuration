@@ -49,7 +49,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- select all
-keymap.set("n", "<leader>a", "ggVG", { desc = "Select all in Visual Block" }) -- select all IN VISUAL BLOCK
+keymap.set("n", "<leader>a", "<Esc>ggVG", { desc = "Select all in Visual Block" }) -- select all IN VISUAL BLOCK
 
 -- exit all :qa
 keymap.set("n", "<leader>ka", "<cmd>:qa<CR>", { desc = "Quit all" })
